@@ -1,0 +1,229 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Variáveis */
+
+:root {
+    --dark-color: #363636;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+H1,
+H2,
+H3,
+H4,
+H5,
+H6,
+p {
+    margin: 0;
+    padding: .8rem 0;
+}
+
+/* Fundo da página */
+
+body {
+    background-color: #ffffff;
+    background-attachment: ;
+    background-image: url('../img/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Sticky footer */
+#wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Define a largura do conteúdo dos containers */
+.limit {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* Cabeçalho da página */
+#wrap>header {
+    background-color: #ffc964;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header img {
+    display: block;
+}
+
+.header h1 {
+    color: #003a3c;
+    font-size: 2rem;
+}
+
+.header form {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header form input,
+.header form button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem;
+}
+
+.header form input {
+    border-radius: .4rem 0 0 .4rem;
+}
+
+.header form button {
+    border-radius: 0 .4rem .4rem 0;
+}
+
+/* Menu principal */
+#wrap>nav {
+    background-color: var(--dark-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: end;
+    border-top: 1px solid var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.nav a {
+    padding: .8rem;
+    color: #ffc964;
+    transition: .25s;
+}
+
+.nav a:hover {
+    background-color: #ffc964;
+    color:  var(--dark-color);
+}
+
+.nav a:first-child {
+    margin-right: auto;
+}
+
+/* Conteúdo principal (section, article e aside) */
+#wrap > main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main>section {
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+.main>aside {
+    background-color: rgba(255, 243, 221, 0.6);
+    padding: 0 1rem;
+    border-top: 3px dotted orange;
+}
+
+/* Rodapé */
+#wrap>footer {
+    background-color:  var(--dark-color);
+    color: #ffffff;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dotted grey;
+}
+
+.footer-top a {
+    font-size: 2rem;
+    color: #ffc964;
+    padding: .25rem;
+    transition: .25s;
+    border-top: 1px solid  var(--dark-color);
+}
+
+.footer-top a:hover {
+    background-color: #ffc964;
+    color:  var(--dark-color);
+}
+
+.footer-botton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-botton ul {
+    margin-top: 0;
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.footer-botton a {
+    color: #ffc964;
+}
+
+.footer-botton a:hover {
+    color: orangered;
+}
+
+
+/* Larguras de telas MD+ */
+@media screen and (min-width: 768px) {
+
+    .main {
+        flex-direction: row;
+    }
+
+    .main>aside {
+        border-top: none;
+        border-left: 3px dotted orange;
+        min-width: 220px;
+        max-width: 220px;
+    }
+}
