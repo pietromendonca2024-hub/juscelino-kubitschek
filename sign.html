@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/image.jpg">
+    <title>FLASH</title>
+</head>
+
+<body> 
+    <form action="#" method="get">
+        <div> Preencha todos os campos do formulário abaixo para se cadastrar:</div>
+
+                        <p>
+                            <label for="contactName">Seu nome:</label>
+                            <input type="text" name="contact_name" id="contactName" required minlength="2" maxlength="255" placeholder="Preencha seu nome social">
+                        </p>
+
+                        <p>
+                            <label for="contactEmail">Seu e-mail:</label>
+                            <input type="email" name="contact_email" id="contactEmail" required placeholder="Seu e-mail principal">
+                        </p>
+                        <p>
+                            <label for="data"> Sua data de nascimento:</label>
+                            <input type="date" name="data" id="data" required placeholder="Sua data de nascimento">
+                        </p>
+                        <p>
+                            <label for="Senha"> Crie uma senha:</label>
+                            <input type="password" name="Senha" id="Senha" required placeholder="Crie uma senha">
+                        </p>
+                        <p>
+                            <label for="confirmSenha"> Confirme sua senha:</label>
+                            <input type="password" name="confirmSenha" id="confirmSenha" required placeholder="Confirme sua senha">
+                        </p>
+                        <p>
+                            <label for="telephone"> Seu telefone:</label>
+                            <input type="tel" name="telephone" id="telephone" required placeholder="Seu telefone">
+                        </p>
+                        <p>
+                            <label for="type"> Tipo de usuário:</label>
+                            <select name="type" id="type" required>
+                                <option value="">Selecione o tipo de usuário</option>
+                                <option value="admin">Aluno</option>
+                                <option value="user">Instrutor</option>
+                            </select>
+                        <p> 
+                            <label for="select">Curso:</label>
+                            <select name="select" id="select" required>
+                                <option value="">Selecione seu curso.</option>
+                                <option value="curso1">Programação python</option>
+                                <option value="curso2">Programação Java</option>
+                                <option value="curso3">Programação Front-End</option>
+                                <option value="curso4">Programação Back-End</option>
+                                <option value="curso5">Programação Full-stack</option>
+                            </select>
+                        </p>
+
+                            <button type="submit">Cadastrar-se</button>
+                        </p>
+
+                    </form>
+
+
+</body>  
