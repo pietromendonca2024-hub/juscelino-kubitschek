@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/image.png">
+    <title>FLASH</title>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <div class="header limit">
+                <a href="index.html"><img src="img/image.jpg" alt="Logotipo de Cappuccino"></a>
+                <h1> FLASH </h1>
+
+                <!-- Formulário de epsquisa no site -->
+                <form action="https://www.google.com/search" target="_blank" method="get">
+                    <input type="search" name="q" placeholder="Procurar...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
+                 </form>
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav limit">
+                <a href="index.html">Início</a>
+                <a href="contacts.html">Contatos</a>
+                <a href="about.html">Sobre</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main limit">
+
+                <section>
+
+                    <h2>Faça Contato</h2>
+                    <p>Preencha todos os campos do formulário abaixo para entrar em contato com a equipe do site.</p>
+                    <p class="center red small">Todos os campos obrigatórios</p>
+
+                  <form action="#" method="get">
+
+                        <p>
+                            <label for="contactName">Seu nome:</label>
+                            <input type="text" name="contact_name" id="contactName" required minlength="2" maxlength="255" placeholder="Preencha seu nome social" value="Joca da Silva">
+                        </p>
+
+                        <p>
+                            <label for="contactEmail">Seu e-mail:</label>
+                            <input type="email" name="contact_email" id="contactEmail" required placeholder="Seu e-mail principal">
+                        </p>
+
+                        <p>
+                            <label for="contactSubject">Assunto do contato:</label>
+                            <input type="text" name="contact_subject" id="contactSubject" required minlength="3" maxlength="255" placeholder="Digite o assunto do seu contato">
+                        </p>
+
+                        <p>
+                            <label for="contactMessage">Mensagem:</label>
+                            <textarea name="contact_message" id="contactMessage" required minlength="4" maxlength="2048" placeholder="Escreva o quanto quiser">Esse é um contato sobre a peteca.</textarea>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                        </p>
+
+                    </form>
+                    
+                </section>
+
+                <aside>
+                    <h3>Mais coisas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde eius assumenda accusantium.
+                    </p>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="footer-top limit">
+                <a href="index.html"><i class="fa-solid fa-house fa-fw"></i></a>
+                <div>&copy; 2026 Joca da Silva</div>
+                <a href="#top"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+            </div>
+
+            <div class="footer-botton limit">
+
+                <div class="footer-social">
+                    <h4>Redes Sociais:</h5>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-fw"></i> Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-fw"></i> Instagram</a></li>
+                        <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-square-github fa-fw"></i> Github.com</a></li>
+                        <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-square-youtube fa-fw"></i> Youtube</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Acesso rápido:</h5>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house fa-fw"></i> Início</a></li>
+                        <li><a href="contacts.html"><i class="fa-solid fa-comments fa-fw"></i> Contatos</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-circle-info fa-fw"></i> Sobre</a></li>
+                        <li><a href="privacy.html"><i class="fa-solid fa-user-lock fa-fw"></i> Sua privacidade</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
