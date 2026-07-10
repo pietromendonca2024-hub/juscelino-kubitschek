@@ -1,0 +1,37 @@
+.mytable {
+    width: 95%;
+    margin: auto;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    border-spacing: 0;
+}
+
+.mytable th, .mytable td {
+    padding: .25rem .5rem;
+}
+
+.mytable th {
+    background-color: rgb(95, 3, 3);
+    color: white;
+}
+ 
+.mytable tr:nth-child(even) {
+    background-color: rgb(153, 153, 153);
+}
+
+.mytable tr:nth-child(odd) {
+    background-color: rgb(207, 207, 207);
+}
+.mytable tr td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+.mytable tr td:nth-child(2) {
+    text-align: center;
+}
+
+li {
+    width: 95%;
+    margin: auto;
+}
